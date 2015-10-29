@@ -1,0 +1,14 @@
+{
+  "name": "insert_array",
+  "version": "1.0.0",
+  "description": "inserting array of docs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies":{
+    "mongodb":"*"
+  },
+  "author": "jmugz3",
+  "license": "ISC"
+}
