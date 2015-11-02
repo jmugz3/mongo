@@ -1,1 +1,23 @@
+#### NODE ###
+#############
+
+### folders
+/*/*/node_modules
+build/Release
+logs
+/M101N/SystemCheck
+/*/*/hw*/dump
+
+
+## files
+.grunt
+*.log
+npm-debug.log*
+*.zip
+
+
+
+
+### OSX ###
+###########
 .DS_Store
