@@ -1,15 +1,32 @@
 import pymongo
 import sys
+from bson.son import SON
+
 
 # connnecto to the db on standard port
 connection = pymongo.MongoClient("mongodb://localhost")
 
+#handles
+db = connection.students
+scores = db.grades
+
+#find homework grades
+def find_homework_grades():
+#in JavaScript
+# db.grades.aggregate([
+#         {'$match':{'score':{'$gte':65}}},
+#         {'$sort':{'score': 1}},
+#         {'$project': {'student_id':true ,'score':true, '_id':false}},
+#         {'$limit':1}])
+
+    scores
+
+
+
 #removes homework grades
 def remove_grade(grade_type):
 
-    #handles
-    db = connection.students
-    scores = db.grades
+
 
     try:
 
@@ -31,7 +48,7 @@ def remove_grade(grade_type):
 ##    db = connection.students
 ##    scores = db.grades
 ##
-####    print "Searching for student data for student with id = " 
+####    print "Searching for student data for student with id = "
 ##
 ##    try:
 ##
@@ -45,5 +62,3 @@ def remove_grade(grade_type):
 
 remove_grade("homework")
 #find_student_data()
-
-    
